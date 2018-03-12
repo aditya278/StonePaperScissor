@@ -18,8 +18,8 @@ public class UIButtonManager : MonoBehaviour {
 
     public void MainMenuBtn()
     {
-        int nextBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneManager.LoadScene("MainMenu");
+        int nextBuildIndex = SceneManager.GetActiveScene().buildIndex - 1;
+        SceneManager.LoadScene(nextBuildIndex);
     }
 
     public void StartBtn()
